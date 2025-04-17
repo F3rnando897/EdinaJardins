@@ -1,84 +1,126 @@
 <!DOCTYPE html>
-<html lang="pt-Br">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Flores</title>
-  <link rel="stylesheet" href="css/estilo.css">
-  <link rel="stylesheet" href="css/sobre.css">
-</head>
-<body>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/estilo.css" />
+    <link rel="stylesheet" href="css/contato.css" />
 
-  <header>
-    <nav>
-      <ul>
-        <li><a href="./index.html">Home</a></li>
-        <li><a href="#sobre">Sobre</a></li>
-        <li><a href="#exposicao">Exposição</a></li>
-        <li><a href="#contato">Contato</a></li>
-      </ul>
-    </nav>
-  </header>
-  <main>
-    <section id="inicio">
-      <div class="banner banner-sobre">
-        <div class="inBanner">
-          <h1>Contato</h1>
-          <p>Venha falar com a gente!</p>
-          <button class="btn">Conheca nosso jardim</button>
-        </div>
-      </div>
-
-    </section>
-    <section id="origin">
-      <h2>Origem do nosso festival</h2>
-      <article>
-        <p>O Festival das Flores nasceu do sonho de conectar as pessoas com a natureza. Iniciado em 2007, 
-          na charmosa cidade de Tiete, ele cresceu com a colaboração de jardineiros, artistas e amantes 
-          das plantas. O evento começou como uma pequena feira comunitária e hoje é um espetáculo 
-          reconhecido nacionalmente.</p>
-        <img src="img/foto.jpg" alt="">
-      </article>
-
-    </section>
-    <section id="objetivos">
-      <h2>Nossos objetivos</h2>
-      <article>
-
-        <img src="img/foto2.jpg" alt="">
-        <ol>
-          <li>Promover a conscientização ambiental</li>
-          <li>Valorizar a diversidade da flora nacional e internacional</li>
-          <li>Incentivar o cultivo de plantas e jardins urbanos</li>
-          <li>Proporcionar experiências sensoriais e educativas para todas as idades</li>
-        </ol>
-      </article>
-    </section>
-    <section id="atividades">
-      <h3>O que Acontece no Festival</h3>
-      <article>
-        <p>Durante o festival, o público é convidado a viver experiências inesquecíveis em meio a flores e jardins. O evento oferece:</p>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="container">
+    <header>
+      <nav>
         <ul>
-          <li>🌷 Exposições de jardins temáticos</li>
-          <li>🎨 Oficinas de jardinagem e arranjos florais</li>
-          <li>📸 Espaços instagramáveis e sensoriais</li>
-          <li>🎶 Apresentações culturais ao ar livre</li>
-          <li>🍃 Feira de plantas, sementes e produtos naturais</li>
-          <li>👩‍🌾 Palestras com especialistas e paisagistas</li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="exposicao.html">Exposição</a></li>
+          <li><a href="contato.html">Contato</a></li>
         </ul>
-      </article>
-    </section>
+      </nav>
+    </header>
+    <main>
+      <section id="formulario">
+        <h1>Contato</h1>
+        <p>Entre em contato com a gente!</p>
+        <div>
+          <form action="recebe.php" method="post">
+            <div class="container-form">
+              <div class="label-box">
+                <label for="nome">Nome:</label>
+                <input
+                  type="text"
+                  id="nome"
+                  name="nome"
+                  placeholder="Digite seu nome"
+                  required
+                />
+              </div>
+              <div class="label-box">
+                <label for="sobrenome">Sobrenome:</label>
+                <input
+                  type="text"
+                  id="sobrenome"
+                  name="sobrenome"
+                  placeholder="Digite seu sobrenome"
+                  required
+                />
+              </div>
+            </div>
+            <label for="email">E-mail:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Digite seu e-mail"
+              required
+            />
+            <label for="telefone">Telefone:</label>
+            <input
+              type="telefone"
+              id="telefone"
+              name="telefone"
+              placeholder="Digite seu Telefone"
+              required
+            />
 
-  </main>
-  <footer>
-    <p>&copy; 2023 Your Company. All rights reserved.</p>
-    <ul>
-      <li><a href="#inicio">Inicio</a></li>
-      <li><a href="#sobre">Sobre</a></li>
-      <li><a href="#servicos">Servicos</a></li>
-      <li><a href="#contato">Contato</a></li>
-    </ul>
-  </footer>
-  
-</body>
+            <div class="container-form">
+              <div class="label-box">
+                <label for="cidade">Cidade:</label>
+                <input
+                  type="text"
+                  id="cidade"
+                  name="cidade"
+                  placeholder="Digite sua cidade"
+                  required
+                />
+              </div>
+              <div class="label-box">
+                <label for="pais">País:</label>
+                <select id="pais" name="pais" required>
+                  <option value="" disabled selected>Selecione seu país</option>
+                  <option value="brasil">Brasil</option>
+                  <option value="argentina">Argentina</option>
+                  <option value="eua">Estados Unidos</option>
+                  <option value="portugal">Portugal</option>
+                  <option value="espanha">Espanha</option>
+                  <option value="franca">França</option>
+                  <option value="alemanha">Alemanha</option>
+                  <option value="japao">Japão</option>
+                  <option value="china">China</option>
+                  <option value="india">Índia</option>
+                </select>
+              </div>
+            </div>
+
+            <label for="mensagem">Mensagem:</label>
+            <textarea
+              id="mensagem"
+              name="mensagem"
+              placeholder="Digite sua mensagem"
+              rows="5"
+              required
+            ></textarea>
+
+            <button type="submit">Enviar</button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2023 Your Company. All rights reserved.</p>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="exposicao.html">Servicos</a></li>
+        <li><a href="#contato.html">Contato</a></li>
+      </ul>
+    </footer>
+  </body>
 </html>

@@ -1,121 +1,101 @@
-#inicio .banner-sobre {
-    background-image: url(../img/bunner-sobre.jpg);
-    background-position-y: 50%;
-    scale: -1;
-    position: relative;
+#formulario {
+  max-width: 600px;
+  margin: 40px auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  border: var(--cor-primaria) solid 1px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  & h1 {
+    font-size: 3rem;
+    margin-bottom: 0px;
   }
-  
-  #inicio .banner-sobre > .inBanner {
-    width: 60%;
-    padding-top: 4em;
-    scale: -1;
-    padding-right: 10%;
-    text-align: right;
-  
-    & > p {
-      padding-left: 3em;
-      margin-bottom: 1em;
-      font-size: 1em;
-    }
+  & p {
+    margin-bottom: 50px;
   }
+}
+
+.container-form{
+  display: flex; 
+  justify-content: space-between;
+}
+
+.label-box{
+  display: block; 
+  width: 48%;
+}
+
+#formulario form label {
+  display: flex;
+
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+#formulario form input,
+#formulario form select,
+#formulario form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+#formulario form button {
   
-  .btn {
-    --c1: var(--white);
-    --c2: var(--cor-primaria);
-    padding: 0.5em 1em;
-    font-size: 1em;
-    font-weight: 700;
-  
-    background-color: transparent;
-    color: var(--c2);
-    border: 3px solid var(--c2);
-    border-radius: 0.2em;
-    cursor: pointer;
-  
-    overflow: hidden;
-    position: relative;
-    transition: 700ms cubic-bezier(0.83, 0, 0.17, 1);
-  
-    &::before {
-      top: 0;
-      left: 0;
-    }
-  
-    &::after {
-      top: 120%;
-      left: 120%;
-    }
+  --c1: var(--white);
+  --c2: var(--cor-primaria);
+  padding: 0.5em 15.6em;
+  font-size: 1em;
+  font-weight: 700;
+
+  background-color: transparent;
+  color: var(--c2);
+  border: 3px solid var(--c2);
+  border-radius: 0.2em;
+  cursor: pointer;
+
+  overflow: hidden;
+  position: relative;
+  transition: 700ms cubic-bezier(0.83, 0, 0.17, 1);
+
+  &::before {
+    top: 0;
+    left: 0;
   }
-  
-  .btn::before,
-  .btn::after {
-    content: "";
-    height: 10em;
-    width: 10em;
-    scale: 0;
-    transition: 1000ms cubic-bezier(0.76, 0, 0.24, 1);
-  
-    background-color: var(--c2);
-    border-radius: 50%;
-  
-    position: absolute;
-    translate: -50% -50%;
-    z-index: -1;
+
+  &::after {
+    top: 120%;
+    left: 120%;
   }
-  
-  .btn:hover {
-    color: var(--c1);
-  
-    &::after,
-    &::before {
-      scale: 2;
-    }
+}
+
+#formulario form button:hover {
+  --c1: var(--white);
+  --c2: var(--cor-primaria);
+  padding: 0.5em 15.6em;
+  font-size: 1em;
+  font-weight: 700;
+
+  background-color: var(--cor-primaria);
+  color: var(--c1);
+  border: 3px solid var(--c2);
+  border-radius: 0.2em;
+  cursor: pointer;
+
+  overflow: hidden;
+  position: relative;
+  transition: 700ms cubic-bezier(0.83, 0, 0.17, 1);
+
+  &::before {
+    top: 0;
+    left: 0;
   }
-  
-  .btn:active {
-    filter: brightness(0.8);
+
+  &::after {
+    top: 120%;
+    left: 120%;
   }
-  
-  #origin {
-    margin: 2em;
-    padding: 2em;
-  }
-  
-  article {
-    padding: 2em 4em;
-    display: flex;
-    gap: 2em;
-    align-items: center;
-  
-    & p {
-      text-align: left;
-      font-size: 1.2em;
-    }
-  }
-  
-  img {
-    border-radius: 16px;
-    background: #f4f4f4;
-    box-shadow: 5px 5px 50px #7a7a7a, -5px -5px 50px #ffffff;
-    max-width: 30%;
-  }
-  
-  #objetivos {
-    margin: 2em;
-    padding: 2em;
-  }
-  
-  #atividades {
-    margin: 2em;
-    padding: 2em;
-  }
-  
-  #atividades article {
-    gap: 10%;
-  }
-  
-  #atividades article :is(p, ul) {
-    width: 50%;
-    text-align: left;
-  }
-  
+}

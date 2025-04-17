@@ -19,6 +19,10 @@ body {
   margin: 0;
 }
 
+.container{
+  background-color: white;
+}
+
 /* Navbar */
 header {
   background: var(--cor-primaria);
@@ -70,6 +74,10 @@ main {
   -webkit-backdrop-filter: blur(9.5px);
   width: 50%;
   height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
 }
 
 #inicio .banner .inBanner h1 {
@@ -137,6 +145,7 @@ main section p {
   max-width: 70%;
   height: auto;
   border-radius: 8px;
+  box-shadow: 5px 5px 50px #7a7a7a, -5px -5px 50px #ffffff;
 }
 
 #exposicao{
