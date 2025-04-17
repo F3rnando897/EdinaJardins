@@ -1,0 +1,54 @@
+
+
+#galeria {
+  margin: 2em;
+  padding: 2em;
+
+  & h1{
+    font-size: 3rem;
+    margin-bottom: 1em;
+  }
+}
+
+#galeria ul{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 2em;
+
+}
+
+.card{
+  max-width: 20%;
+  padding: 1em;
+
+  border-radius: 2em;
+  overflow: hidden;
+  background: #fff;
+  box-shadow:  2px 2px 20px #7a7a7a,
+               -2px -2px 20px #ffffff;
+
+  text-align: left;
+
+  & img {
+    max-width: 100%;
+    border-radius: 1em;
+  }
+
+  & h3{
+    margin: 0;
+    font-size: 2.5rem;
+  }
+
+  & a{
+    margin-top: 1em;
+    padding: .5em 1em;
+
+    display: inline-block;
+    text-decoration: none;
+    color: #6842db;
+    border: 2px solid #6842db;
+    border-radius: 1em;
+  }
+}
