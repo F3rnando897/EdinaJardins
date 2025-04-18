@@ -29,5 +29,5 @@ O site da Edina Jardins é composto por várias seções que destacam:
 
 ## 😉 Site desenvolvido por:
 
-- **Fernando de Jesus Matos RA: 202510152**
-- **Nikolas Leme Santos RA: 202510303**
+- **Fernando de Jesus Matos - RA: 202510152**
+- **Nikolas Leme Santos - RA: 202510303**
