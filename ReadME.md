@@ -2,6 +2,10 @@
 
 Bem-vindo ao **Edina Jardins**, um projeto que celebra a beleza da natureza e a conexão com o meio ambiente. Este site foi desenvolvido para apresentar informações sobre o festival, suas atividades, exposições e muito mais.
 
+## 💻 Acesse o nosso site
+
+[www.EdinaJardins.com.br](https://f3rnando897.github.io/EdinaJardins/)
+
 ## 📋 Descrição do Projeto
 
 O site da Edina Jardins é composto por várias seções que destacam:
