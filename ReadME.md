@@ -4,7 +4,7 @@ Bem-vindo ao **Edina Jardins**, um projeto que celebra a beleza da natureza e a 
 
 ## 💻 Acesse o nosso site
 
-[www.EdinaJardins.com.br](https://f3rnando897.github.io/EdinaJardins/)
+### [www.EdinaJardins.com.br](https://f3rnando897.github.io/EdinaJardins/)
 
 ## 📋 Descrição do Projeto
 
